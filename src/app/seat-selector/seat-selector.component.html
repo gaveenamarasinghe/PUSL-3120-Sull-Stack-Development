@@ -1,52 +1,51 @@
 <div class="container">
-    <div class="background-image">
-      <img src="road2.avif" alt="Bus Background" class="background-img" />
-    </div>
-  
-    <div class="card">
-      <!-- Card Container -->
-      <!-- Left Section: Bus Image and Details -->
-      <div class="left-section">
-        <div class="bus-image">
-          <img src="bus3.png" alt="Luxury Bus" />
-        </div>
-  
-        <div class="bus-details">
-          <h2>Luxury Bus <span>(Bus Number Plate)</span></h2>
-          <p>
-            Travel with comfort and style with our well-maintained buses. Offering a smooth journey, with reliable seating and air conditioning, it’s the perfect choice for any traveler.
-          </p>
-        </div>
-  
-        <p>Selected Seats: {{ getSelectedSeats().join(', ') || 'None' }}</p>
-        <button
-          class="confirm-button"
-          [disabled]="selectedSeats.length === 0"
-          (click)="confirmSelection()"
-        >
-          Confirm
-        </button>
+  <div class="background-image">
+    <img src="road2.avif" alt="Bus Background" class="background-img" />
+  </div>
+
+  <div class="card">
+    <!-- Card Container -->
+    <!-- Left Section: Bus Image and Details -->
+    <div class="left-section">
+      <div class="bus-image">
+        <img src="bus02.png" alt="Luxury Bus" />
       </div>
-  
-      <!-- Right Section: Bus Seat Grid Layout -->
-      <div class="seats-grid bus-layout">
-        <h3 class="seat-layout-title">Seat Selection</h3>
-        <div *ngFor="let row of seatLayout; let rowIndex = index" class="bus-row">
-          <div
-            *ngFor="let isSeat of row; let seatIndex = index"
-            class="seat"
-            [ngClass]="{
-              'empty': !isSeat,
-              'booked': seats[rowIndex * 5 + seatIndex].status === 'booked',
-              'selected': seats[rowIndex * 5 + seatIndex].status === 'selected',
-              'available': seats[rowIndex * 5 + seatIndex].status === 'available'
-            }"
-            (click)="!seats[rowIndex * 5 + seatIndex].empty && toggleSeatSelection(seats[rowIndex * 5 + seatIndex])"
-          >
-            {{ seats[rowIndex * 5 + seatIndex].id || '' }}
-          </div>
+
+      <div class="bus-details">
+        <h2>Luxury Bus <span>(Bus Number Plate)</span></h2>
+        <p>
+          Travel with comfort and style with our well-maintained buses. Offering a smooth journey, with reliable seating and air conditioning, it’s the perfect choice for any traveler.
+        </p>
+      </div>
+
+      <p>Selected Seats: {{ getSelectedSeats().join(', ') || 'None' }}</p>
+      <button
+        class="confirm-button"
+        [disabled]="selectedSeats.length === 0"
+        (click)="confirmSelection()"
+      >
+        Confirm
+      </button>
+    </div>
+
+    <!-- Right Section: Bus Seat Grid Layout -->
+    <div class="seats-grid bus-layout">
+      <h3 class="seat-layout-title">Seat Selection</h3>
+      <div *ngFor="let row of seatLayout; let rowIndex = index" class="bus-row">
+        <div
+          *ngFor="let isSeat of row; let seatIndex = index"
+          class="seat"
+          [ngClass]="{
+            'empty': !isSeat,
+            'booked': seats[rowIndex * 5 + seatIndex].status === 'booked',
+            'selected': seats[rowIndex * 5 + seatIndex].status === 'selected',
+            'available': seats[rowIndex * 5 + seatIndex].status === 'available'
+          }"
+          (click)="!seats[rowIndex * 5 + seatIndex].empty && toggleSeatSelection(seats[rowIndex * 5 + seatIndex])"
+        >
+          {{ seats[rowIndex * 5 + seatIndex].id || '' }}
         </div>
       </div>
     </div>
   </div>
-  
+</div>

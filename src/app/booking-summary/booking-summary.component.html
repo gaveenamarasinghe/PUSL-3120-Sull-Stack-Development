@@ -1,0 +1,58 @@
+<div class="booking-confirmation1" id="booking-confirmation-content">
+    <div class="logo-container">
+      <!--<img src="assets/Website Logo.png" alt="Company Logo" class="logo">-->
+    </div>
+    <h1>Booking Summary</h1>
+    <form (ngSubmit)="onSubmit()">
+      <p>Dear {{ bookingDetails.passengerName }},</p>
+      <p>Please confirm your booking details below:</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Booking Reference Number:</td>
+            <td><input type="text" id="bookingDetails.reference" name="reference" readonly></td>
+          </tr>
+          <tr>
+            <td>Passenger Name:</td>
+            <td><input type="text" id="bookingDetails.passengerName" name="passengerName"></td>
+          </tr>
+          <tr>
+            <td>Email Address:</td>
+            <td><input type="email" id="bookingDetails.email" name="email"></td>
+          </tr>
+          <tr>
+            <td>Contact Number:</td>
+            <td><input type="text" id="bookingDetails.contactNumber" name="contactNumber"></td>
+          </tr>
+          <tr>
+            <td>Departure Location:</td>
+            <td><input type="text" id="bookingDetails.departureLocation" name="departureLocation"></td>
+          </tr>
+          <tr>
+            <td>Arrival Location:</td>
+            <td><input type="text" id="bookingDetails.arrivalLocation" name="arrivalLocation"></td>
+          </tr>
+          <tr>
+            <td>Departure Date & Time:</td>
+            <td><input type="datetime-local" id="bookingDetails.departureDateTime" name="departureDateTime"></td>
+          </tr>
+          <tr>
+            <td>Arrival Date & Time:</td>
+            <td><input type="datetime-local" id="bookingDetails.arrivalDateTime" name="arrivalDateTime"></td>
+          </tr>
+          <tr>
+            <td>Seat Number:</td>
+            <td><input type="text" id="bookingDetails.seatNumber" name="seatNumber"></td>
+          </tr>
+          <tr>
+            <td>Total Fare:</td>
+            <td><input type="text" id="bookingDetails.totalFare" name="totalFare" readonly></td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="submit" class="confirm-button">Confirm & Proceed to Payment</button>
+      <button type="button" class="edit-button" (click)="editBooking()">Edit</button>
+      <button type="button" class="cancel-button" (click)="cancelBooking()">Cancel</button>
+    </form>
+  </div>
+  

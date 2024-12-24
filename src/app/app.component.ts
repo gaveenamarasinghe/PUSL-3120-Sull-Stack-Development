@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { BookingSummaryComponent } from './booking-summary/booking-summary.component';
+import { BookingReceiptComponent } from './booking-receipt/booking-receipt.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, BookingSummaryComponent,BookingReceiptComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'BOOKME-Web-Application';
+  title = 'booking-confirmation';
 }

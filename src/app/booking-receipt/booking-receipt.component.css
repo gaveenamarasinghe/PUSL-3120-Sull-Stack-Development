@@ -1,0 +1,49 @@
+:host {
+    background-image: url('/nycbus.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+.booking-confirmation {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid #f5f2f2;
+border-radius: 10px;
+background-color: #ebf2f3;
+filter: opacity(90%);
+}
+
+.logo {
+width: 150px;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+}
+
+.booking-confirmation h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.booking-confirmation table {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.booking-confirmation td {
+padding: 5px 10px;
+border-bottom: 1px solid #ddd;
+}
+
+.booking-confirmation p {
+margin: 10px 0;
+}

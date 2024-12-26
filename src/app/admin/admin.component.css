@@ -1,0 +1,117 @@
+.logo {
+    position:absolute;
+    top: 90px; 
+    right: 630px; 
+    width: 250px; 
+    height: auto;  
+    object-fit: cover; 
+   
+  }
+  .admin-dashboard {
+      max-width: 60%;
+      margin: 20px auto;
+      margin-top: 50px;
+      padding: 90px;
+      background-color: rgb(255, 255, 255, 0.8);
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+      
+    }
+    
+    .dashboard-header {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 60px;
+    }
+  
+    .admin-dashboard-title {
+      margin-top: 2px; /* Reduce extra spacing */
+      font-size: 24px; /* Adjust font size if needed */
+    }
+    
+    .dashboard-header h1 {
+      font-size: 2em;
+      color: #333;
+      color: #3d0505;
+    }
+    
+    .dashboard-content .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+  
+    }
+    
+    .stat-card {
+      flex: 1;
+      margin: 20px 15px;
+      padding: 20px;
+      background-color: #04182a;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .stat-card h2 {
+      margin-bottom: 10px;
+      font-size: 1.5em;
+      color: #ffffff;
+    }
+    
+    .stat-card p {
+      font-size: 2em;
+      font-weight: bold;
+      color: #89d0f1;
+    }
+    
+  
+    .management-section {
+      margin-bottom: 50px;
+    }
+    
+    .management-section h2 {
+      margin-bottom: 15px;
+      font-size:larger;
+      color: #333;
+    }
+    
+    .form-group {
+      margin-bottom: 50px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size:larger;
+      color: #b40f0f;
+    }
+    
+    .form-group input {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #b2e5e4;
+      border-radius: 5px;
+      font-size: medium;
+      
+    }
+    
+    .btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: medium;
+      
+    }
+  
+  
+    
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    
+    

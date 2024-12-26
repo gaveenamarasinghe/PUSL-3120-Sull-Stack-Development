@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    /*background-image: url("https://img.freepik.com/premium-photo/aipowered-public-transport-with-realtime-adaptive-scheduling-autonomous-buses-adjusting-routes-based-aioptimized-passenger-demand_1230253-33787.jpg") ;*/
+    /*background-image: url("https://img.freepik.com/premium-photo/this-city-future-ecofriendly-transportation-such-as-electric-buses-bikes-are-norm-reducing-carbon-footprint-encouraging-healthier-lifestyle_674594-6975.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    h1{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 150px;
+    }
+    

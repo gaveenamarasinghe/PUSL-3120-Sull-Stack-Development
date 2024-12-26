@@ -1,0 +1,45 @@
+<div class="admin-dashboard">
+    <img src="logo2.png" alt="BookMe Logo" class="logo">
+    <header class="dashboard-header">
+        <h1 class="admin-dashboard-title">Admin Dashboard</h1>
+    </header>
+  
+    <div class="dashboard-content">
+      <!-- Statistics Section -->
+      <div class="stats">
+        <div class="stat-card">
+          <h2>Registered Users</h2>
+          <p id="user-count">0</p>
+          <button class="btn" onclick="viewUsers()">View Users</button>
+        </div>
+        <div class="stat-card">
+          <h2>Registered Buses</h2>
+          <p id="bus-count">0</p>
+          <button class="btn" onclick="viewBuses()">View Buses</button>
+        </div>
+      </div>
+
+  
+      <!-- User Management Section -->
+      <div class="management-section">
+        <h2>Manage Users</h2>
+        <div class="form-group">
+          <label for="remove-user-id">Enter User ID to Remove:</label>
+          <input type="text" id="remove-user-id" placeholder="User ID">
+          <button class="btn" onclick="removeUser()">Remove User</button>
+        </div>
+      </div>
+  
+      <!-- Bus Management Section -->
+      <div class="management-section">
+        <h2>Manage Buses</h2>
+        <div class="form-group">
+          <label for="remove-bus-id">Enter Bus ID to Remove:</label>
+          <input type="text" id="remove-bus-id" placeholder="Bus ID">
+          <button class="btn" onclick="removeBus()">Remove Bus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

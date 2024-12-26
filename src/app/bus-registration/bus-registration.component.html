@@ -1,0 +1,53 @@
+<div class="form-container">
+    <img src="logo2.png" alt="BookMe Logo" class="logo">
+    <h1>Bus Registration Form</h1>
+    <form>
+      <!-- Bus Owner Details -->
+      <fieldset>
+        <legend>Bus Owner Details</legend>
+        <label for="ownerName">Bus Owner Name:</label>
+        <input type="text" id="ownerName" name="ownerName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+      </fieldset>
+
+      <!-- Bus Details -->
+      <fieldset>
+        <legend>Bus Details</legend>
+        <label for="regNumber">Bus Registration Number:</label>
+        <input type="text" id="regNumber" name="regNumber" required>
+
+        <label for="busType">Bus Type:</label>
+        <select id="busType" name="busType" required>
+          <option value="minibus">Mini Bus</option>
+          <option value="coach">Coach</option>
+          <option value="transit">Transit Bus</option>
+        </select>
+
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" name="seats" min="1" required>
+
+        <label>AC/Non-AC:</label>
+        <div>
+            <fieldset>
+                <input type="radio" id="ac" name="features" value="AC">
+                <label for="ac">AC</label>
+
+                <input type="radio" id="nonAc" name="features" value="Non-AC">
+                <label for="nonAc">Non-AC</label>
+            </fieldset>
+        </div>
+
+        <label for="route">Route:</label>
+        <input type="text" id="route" name="route" required>
+      </fieldset>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+

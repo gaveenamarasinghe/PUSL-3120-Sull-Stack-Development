@@ -1,0 +1,89 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+  min-height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #333;
+  justify-content: space-between;
+  z-index: 20;
+  box-shadow: 4px 4px 10px #33333340;
+}
+
+.left-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo{
+  max-height: 3rem;
+}
+
+.middle-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.middle-section li{
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease-in;
+  padding: 0.1rem 0.5rem;
+  text-wrap: nowrap;
+}
+
+.middle-section li, .middle-section a{
+  text-decoration: none;
+  color: #333;
+  list-style: none;
+  cursor: pointer;
+}
+
+.middle-section li:hover{
+  border-bottom: 2px solid #3b82f6;
+  padding: 0.1rem 0.5rem;
+}
+
+.action-buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.btn-primary{
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover{
+  background-color: #316bc6;
+}
+
+.btn-secondary{
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.btn-secondary:hover{
+  background-color: #3b82f6;
+  color: white
+}

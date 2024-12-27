@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "BOOKME-Web-Application": {
+    "Paypal": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/bookme-web-application",
+            "outputPath": "dist/paypal",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "BOOKME-Web-Application:build:production"
+              "buildTarget": "Paypal:build:production"
             },
             "development": {
-              "buildTarget": "BOOKME-Web-Application:build:development"
+              "buildTarget": "Paypal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,5 +92,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1fd73d01-a94e-479d-a3f5-c54a5ec0b36c"
   }
 }

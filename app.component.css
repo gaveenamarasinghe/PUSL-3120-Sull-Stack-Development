@@ -1,0 +1,109 @@
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .subtitle a {
+    color: #0070ba;
+    text-decoration: none;
+  }
+  
+  .form-group {
+    margin-top: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #0070ba;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:disabled {
+    background: #cccccc;
+  }
+  
+  .help-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #0070ba;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .divider span {
+    padding: 0 10px;
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .divider:before,
+  .divider:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+  }
+  
+  .btn-secondary {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    color: #0070ba;
+    border: 1px solid #0070ba;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  

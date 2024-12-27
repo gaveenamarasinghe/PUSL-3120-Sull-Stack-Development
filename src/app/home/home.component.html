@@ -1,0 +1,51 @@
+<div
+  class="min-h-[100vh] hero-background flex flex-col gap-6 lg:gap-14 justify-center items-center pb-20 px-4"
+>
+  <div class="overlay"></div>
+  <div class="w-full max-w-4xl z-10 block mx-auto">
+    <h1
+      class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white"
+    >
+      Book Your Next Bus Ride from Homagama in Just a Few Clicks!
+    </h1>
+    <p class="text-center text-gray-50">
+      Plan your next journey effortlessly from Homagama. Book bus rides online
+      with ease and convenience, saving time and ensuring a stress-free travel
+      experience. Your next adventure is just a few clicks away!
+    </p>
+  </div>
+  <form
+    class="w-full z-10 max-w-4xl bg-yellow-500 p-4 py-8 rounded-lg border flex flex-col lg:flex-row gap-2"
+    method="post"
+    action=""
+  >
+    <select class="flex-1 rounded border border-black shadow px-1">
+      <option selected>From</option>
+      <option>Pitipana</option>
+      <option>School Junction</option>
+      <option>NSBM</option>
+      <option>UOC FOT</option>
+      <option>Makumbura</option>
+      <option>Railway Station</option>
+      <option>Homagama Bus Station</option>
+    </select>
+    <select class="flex-1 rounded border border-black shadow px-1">
+      <option selected>To</option>
+      <option>Pitipana</option>
+      <option>School Junction</option>
+      <option>NSBM</option>
+      <option>UOC FOT</option>
+      <option>Makumbura</option>
+      <option>Railway Station</option>
+      <option>Homagama Bus Station</option>
+    </select>
+    <input class="flex-1 rounded border border-black shadow px-1" type="date" />
+    <button
+      class="flex-1 rounded bg-blue-500 hover:bg-blue-700 transition-colors text-white capitalize py-1"
+      type="button"
+    >
+      <i class="fa-solid fa-magnifying-glass mr-1"></i>Search
+    </button>
+  </form>
+</div>
+<app-search-results></app-search-results>

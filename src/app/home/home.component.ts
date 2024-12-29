@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { SearchResultsComponent } from '../search-results/search-results.component';
 
 @Component({
   selector: 'app-home',
-  imports: [SearchResultsComponent],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
